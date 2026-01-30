@@ -11,26 +11,93 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Errandly</title>
   </head>
   <body>
-    <section class="container max-w-1440px h-900px">
-      <div>
-        <img
-          class="w-667px h-900px"
-          src="img/8aaced9ae79f7d73ced97b275bbbd5aadc8bff42.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <div>
-          <h1>Welcome to Errandly</h1>
-          <p>Create your vendor account here</p>
+    <section>
+      <div class="relative container grid grid-cols-2 gap-10">
+        <div
+          class="bg-[url('/img/8aaced9ae79f7d73ced97b275bbbd5aadc8bff42.jpg')] bg-cover bg-center"
+        >
+          <h2>Manage your store,orders and growth in one place</h2>
         </div>
+
         <div>
-          <form action="">
-            
-          </form>
+          <div>
+            <h1 class="font-bold text-3xl pt-8 pb-3">Welcome to Errandly</h1>
+            <p class="text-sm pb-7">Create your vendor account here</p>
+          </div>
+          <div>
+            <form action="" class="leading-8">
+              <div>
+                <label for="fullname" class="text-sm">Full Name</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Enter your full name"
+                  class="block w-4/5 border border-gray-300 bg-gray-50 focus:outline-none text-sm py-1 px-3 rounded-md"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="text-sm">Email Address</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  class="block w-4/5 border border-gray-300 bg-gray-50 focus:outline-none text-sm py-1 px-3 rounded-md"
+                />
+              </div>
+
+              <div>
+                <label for="phone" class="text-sm">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  class="block w-4/5 border border-gray-300 bg-gray-50 focus:outline-none text-sm py-1 px-3 rounded-md"
+                />
+              </div>
+
+              <div>
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter password"
+                  class="block w-4/5 border border-gray-300 bg-gray-50 focus:outline-none text-sm py-1 px-3 rounded-md"
+                />
+              </div>
+
+              <div>
+                <label for="password" class="text-sm">Confirm Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Re-enter password here"
+                  class="block w-4/5 border border-gray-300 bg-gray-50 focus:outline-none text-sm py-1 px-3 rounded-md"
+                />
+              </div>
+              <button
+                class="text-sm border bg-blue-200 mt-10 px-48 py-1 rounded-md"
+              >
+                Create Account
+              </button>
+
+              <div class="pl-20">
+                <p class="text-sm py-5 pl-10">
+                  Already have an account?
+                  <span class="text-orange-400">Login Now</span>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
